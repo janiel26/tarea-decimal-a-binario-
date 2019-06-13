@@ -1,1 +1,12 @@
+entrada = input('Ingrese el número de binario:')
+
+cadena = entrada [::-1]
+salida = 0; expon = 0;
+
+while expon < len(cadena):
+    if int(cadena[expon]) == 1:
+        salida += int(cadena[expon]) * 2 **expon
+    expon += 1
+
+print ('El resultado es: ', salida)
 
